@@ -10,6 +10,7 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1)
+    item.times do
     @total += price*quantity
     quantity.times do  
       @all << title
